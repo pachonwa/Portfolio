@@ -36,60 +36,18 @@
 		text-align: center;
 		font-family: "Lobster Two";
 	    }
-div.container3 {
-	clear: right;
-	width: 100%;
-	overflow: scroll;
-	background:white;
-	font-family: "Lobster Two";
-	height: 100%;
-	display: inline-block;
+.column {
+	float: right;
+	width: 33.33%;
+	padding: 10px;
+	height: 300px;
 }
-div.container2 {
-	clear: left;
-	float: left;
-	width: 100%;
-	right: 33.333%;
-	background:white;
-	font-family: "Lobster Two";
-	height: 100%;
-	display: inline-block;
-}
-div.container1 {
-	float: left;
-	width: 100%;
-	right: 33.333%;
-	background:white;
-	font-family: "Lobster Two";
-	height: 100%;
-	display: inline-block;
-}
-div.col1 {
-	float: left;
-	width: 30%;
-	positon: relative;
-	left: 60.67%;
-	overflow: auto;
-	text-align: center;
-	
-}
-div.col2 {
-	left: 67.67%;
-	oveflow: auto;
-    border-left: black solid 1px;
-    border-right: black solid 1px;
-    padding: 13px;
-	margin: 0px;
-	text-align: center
-    
-}
-div.col3 {
-	
-	width: 30%;
-	position: relative;
-	left: 69.67%;
-	overflow: auto;
-	text-align: center;
+
+.row {
+	conent: "";
+	display: table;
+	clear: both;
+
 }	
 	</style>
 		</head>
@@ -115,8 +73,8 @@ div.col3 {
 	</div>
 	 
 
-<div class="container1">
-	<div id="col1">
+<div class="row">
+	<div id="column">
 		
     <h2> 
 	    Things I Like
@@ -133,10 +91,10 @@ div.col3 {
   <li>CHICKEN:)</li>
 </ul>
 	</div>
-</div>
+
 	
-<div class="container2">
-	<div id="col2">   
+<div class="column">
+	 
 <h3> Fun Facts</h3>
     <ul style="list-style-type:none">
 	    <li>There is a Phoebe bird</li> 
@@ -149,10 +107,10 @@ div.col3 {
 	</ul>
 	
 	</div>
-</div>
+
 		
-<div class="container3">
-	<div id="col3">	
+<div class="column">
+	
 <h2> Contact Info</h2>
 	<ul style="list-style-type:none">
 	<li><a href="https://twitter.com/phoebeachonwa">Twitter</a></li>
@@ -164,6 +122,7 @@ div.col3 {
 		<li>sldflsdfjlkdsf</li>
 	</div>
 </div>
+	
 <div class = "container">    
 <div class="parallax"></div>
 	</div>
