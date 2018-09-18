@@ -1,0 +1,47 @@
+body {
+  margin:0px;
+}
+
+.navbar {
+  background-color: #D2B48C;
+  font-family: "Poiret One";
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+}
+
+.navbar li {
+  padding: 0px 20px;
+  font-size: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.projects {
+  /*background-color: blue;*/
+  padding: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  border-radius: 5%;
+
+}
+
+.box {
+  padding: 50px;
+  margin: 40px;
+  border: 1px solid black;
+  border-radius: 10%;
+}
