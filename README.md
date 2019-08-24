@@ -1,2 +1,2 @@
 # Portfolio
-Girls Who Code Web Portfolio
+Girls Who Code Web Portfolios
