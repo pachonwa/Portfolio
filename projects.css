@@ -40,8 +40,58 @@ body {
 }
 
 .box {
-  padding: 50px;
-  margin: 40px;
+  vertical-align: middle;
+  position: absolute;
+  /* width: 600px; */
+  /* height: 400px; */
+  transform: translate(55%, 10%);
+  /* padding: 50px; */
+  margin: 70px;
   border: 1px solid black;
-  border-radius: 10%;
+  border-radius: 1%;
+}
+
+.columnforbuttons {
+  float: left;
+  width: 25%;
+  height: 350px;
+  /* background-color:blue; */
+  /* border-color: red; */
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 350px;
+}
+
+.column>img{
+  width:50%;
+  height:50%;
+  position:absolute;
+  border-radius: 1%;
+}
+
+img:hover{
+  opacity:0.8;
+  text-align: center;
+}
+
+.next {
+  border-color:transparent;
+  font-size: 50px;
+  font-weight: lighter;
+}
+.previous {
+  border-color:transparent;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.next{
+  outline: none;
+}
+
+.previous{
+  outline:none;
 }
