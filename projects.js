@@ -50,7 +50,4 @@ nextArrow.addEventListener('click', function(){
     nextImage();
 })
 
-// actualImage.addEventListener("mouseover", function(){
-//     actualImage.slide.opacity = 0.5;
-// })
 showFirstImage();
