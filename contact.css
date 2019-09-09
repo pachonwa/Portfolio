@@ -40,14 +40,17 @@ h1 {
 }
 
 .centerofpage {
-  /* display: block; */
-  width:30%;
+  /* width:30%; */
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+  position: relative;
   /* border: 0.5px solid black; */
-  border-radius: 40%;
-  margin-left: 300px;
+  border-radius: 50%;
+  margin-left: 37%;
 }
-
-.columns {
-  float: left;
-  width: 50%;
+.centerofpage img {
+  width: 100%;
+  height: auto;
+  margin-top: -140px;
 }
