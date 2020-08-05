@@ -1,25 +1,88 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="phoebeachonwa.mehs@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
+
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-<link href="contact.css" rel="stylesheet" type="text/css">
-<title>Contact Page</title>
 
-<div class="navbar">
-   <ul>
-     <li><a href="GirlsWhoCodePortfolio.html">Home</a></li>
-     <li><a href="projects.html">Projects</a></li>
-     <li><a href="contact.html">Contact</a></li>
-   </ul>
- </div>
 
-<h1 style="text-align: center;">Contact</h1>
-<div>
-  <div class="centerofpage" >
-    <img src="portfoliopic.jpg">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link href="contact.css" rel="stylesheet" type="text/css">
+  <title>Contact Page</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="GirlsWhoCodePortfolio.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </div>
-</div>
+
+  <h1 style="text-align: center;">Contact</h1>
+  <div>
+    <div class="centerofpage" >
+      <img src="portfoliopic.jpg">
+    </div>
+  </div>
+
+  <form style="text-align: center; margin-top: 40px;" method="POST" action="contact.php">
+    <div>
+      <label for="form-control">First Name:</label>
+      <input type="text" name="firstName" class="form-control" placeholder="First Name">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="form-control">Last Name: </label>
+      <input type="text" name="lastName" class="form-control" placeholder="Last Name">
+    </div>
+
+      <br>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email Address: </label>
+      <input name="senderEmail" type="email" id="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+    </div>
+
+    <br>
+    <label>Message:</label>
+    <textarea rows="5" cols="20" name="message"></textarea>
+    <br>
+
+    <button name= "submit"type="submit" class="btn btn-primary">Submit</button>
+  </form>
+    
 <!-- <div class="columns"> -->
-<p style="margin: 370px; margin-top:50px">Hello, my name is Phoebe Achonwa from Hayward, CA. I am attending University of California, Santa Cruz. Some clubs
+<!-- <p style="margin: 370px; margin-top:50px">Hello, my name is Phoebe Achonwa from Hayward, CA. I am attending University of California, Santa Cruz. Some clubs
   I am in are African Student Union(ASU), the National Society of Black Engineers(NSBE), and Slugbotics.
 </p>
-<!-- </div> -->
 
+
+<form>
+    <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name">
+      </div>
+    </div>
+  </form>  -->
+<!-- </div>
+</body>
