@@ -43,7 +43,8 @@ window.addEventListener("scroll", e=> {
 
     if (bounding.top <= 787){
         document.getElementById("navbar").style.transition = "background-color 0.2s ease";
-        document.getElementById("navbar").style.backgroundColor = "#101113";
+        // document.getElementById("navbar").style.backgroundColor = "#101113";
+        document.getElementById("navbar").style.backgroundColor = "black";
     }
     else if (bounding.top >= 788){
         document.getElementById("navbar").style.transition = "background-color 0.2s ease";
