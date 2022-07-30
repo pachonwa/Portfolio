@@ -1,21 +1,3 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="phoebeachonwa.mehs@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?>
-
 <!DOCTYPE html>
 
 
@@ -40,7 +22,7 @@ if($_POST["submit"]) {
     </div>
   </div>
 
-  <form style="text-align: center; margin-top: 40px;" method="POST" action="contact.php">
+  <form style="text-align: center; margin-top: 40px;" method="post" action="">
     <div>
       <label for="form-control">First Name:</label>
       <input type="text" name="firstName" class="form-control" placeholder="First Name">
@@ -68,13 +50,10 @@ if($_POST["submit"]) {
     <button name= "submit"type="submit" class="btn btn-primary">Submit</button>
   </form>
     
-<!-- <div class="columns"> -->
-<!-- <p style="margin: 370px; margin-top:50px">Hello, my name is Phoebe Achonwa from Hayward, CA. I am attending University of California, Santa Cruz. Some clubs
-  I am in are African Student Union(ASU), the National Society of Black Engineers(NSBE), and Slugbotics.
-</p>
 
 
-<form>
+
+<!-- <form>
     <div class="form-row">
       <div class="col">
         <input type="text" class="form-control" placeholder="First name">
@@ -84,5 +63,28 @@ if($_POST["submit"]) {
       </div>
     </div>
   </form>  -->
-<!-- </div>
+
 </body>
+
+
+<?php
+  $to = "phoebachonwa.mehs@gmail.com";
+  $subject = $_POST['firstName'] . " " . $_POST['lastName'];
+
+  $from = $_POST['senderEmail'];
+
+  $message = $_POST['message'];
+
+ <!-- // Always set content-type when sending HTML email -->
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+<!-- // More headers  -->
+  $headers .= "From: $email_from \r\n";
+ <!-- $headers .= 'Cc: myboss@example.com' . "\r\n";  -->
+
+  mail($to,$subject,$message,$headers);
+?>
+
+
+
