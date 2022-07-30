@@ -10,11 +10,14 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-	<link href="PhoebePortfolio.css" rel="stylesheet" type="text/css">
-	<script src="PhoebePortfolio.js"></script>
+	<link href="styling/PhoebePortfolio.css" rel="stylesheet" type="text/css">
+	<script src="javascript/PhoebePortfolio.js"></script>
 	<link href="//fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,48 +26,55 @@
 </head>
 
 <body>
-	<section id="home">
-		<header>
-			<a href="#home"><img id="logo" src="P (1).png" </a> <ul class="menu">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="./PhoebeResume copy.pdf" target="Resume.html">Resume</a></li>
-				</ul>
-		</header>
-		<div class="bottom">
-			<p style="font-size: 20px;">Hello, my name is</p>
-			<p class="typing" style="font-size: 60px;">SLEEPY Achonwa</p>
+	<section class="container-fluid" id="home">
+		<div class="main-nav">
+			<ul class="nav flex-row">
+				<li ><a href="./PhoebeResume copy.pdf" target="Resume.html">RESUME</a></li>
+				<li ><a href="#projects">PROJECTS</a></li>
+				<!-- <li ><a href="#skills">SKILLS</a></li> -->
+				<li ><a href="#about">ABOUT</a></li>
+				<li ><a href="#home">HOME</a></li>
+			</ul>
 		</div>
+
+		<div class="bottom row">
+			<div class="col">
+				<p style="font-size: 30px;">Hello, my name is</p>
+				<p class="typing" style="font-size: 70px;">Phoebe Achonwa :)</p>
+			</div>
+		</div>
+		<a id="scroll-btn"></a>
 	</section>
 
 	<section id="about">
-		<div class="row fadeInUp" style="padding-right: 150px; padding-left: 150px">
+		<div class="row fadeInUp" style="padding-right: 150px; padding-left: 150px; display:flexbox">
 			<div class="col">
 				<p>Picture goes here</p>
 			</div>
 			<div class="col">
-				<div class="aboutTopDiv">
-					<h4 style="margin-bottom: 30px; margin-top: 10px; font-weight: bold">About Me</h4>
-					<p style="font-size: 19px">Hi! I am a rising fourth year studying computer engineering at the
-						University of California, Santa Cruz. I'm interested in web development, software engineering,
+				<div class="aboutTopDiv" style="flexbox">
+					<h4 style="margin-bottom: 10px; margin-top: 10px; font-weight: bold">About Me</h4>
+					<p style="font-size: 19px">Hi! I am a recent graduate of University of California, Santa Cruz with a B.S. in computer engineering. 
+						I'm interested in web development, software engineering,
 						and product management.
 						I began my coding journey when I joined Girls Who Code during my
-						high school year and later participated in the Google Computer Science Summer Institute. Here at
-						Santa Cruz, I have joined
+						high school years and later participated in the Google Computer Science Summer Institute. During my time at Santa Cruz
+						, I joined
 						a few clubs such as the National Society of Black Engineers(NSBE) and CruzHacks, a non-profit
 						hackathon held each year, where I
-						assissted the sponsorship team. I am also currently on the NueroTech team. Last year, we created
+						assissted the sponsorship team. I also joined the NueroTech team. Last year, we created
 						a headset that predicts the words
 						our user is saying just from the movement of their mouth.
 					</p>
+					<br>
+					<h3>Skills</h3>
+					<p style="font-size: 19px">C programming, Java, HTML & CSS, Python & Javascript(little experience)</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="skills">
+	<!-- <section id="skills">
 		<div class="row" style="text-align:center; padding-left: 150px; padding-right: 150px">
 			<div class="col">
 				<h2>Skills</h2>
@@ -106,7 +116,7 @@
 			</div>
 
 		</div>
-	</section>
+	</section> -->
 
 	<section id="projects">
 		<div style="padding-left: 150px; padding-right: 150px;">
@@ -115,7 +125,7 @@
 				<div class="row projectCards" data-aos="fade-left">
 					<div class="col-4" style="padding:0px;">
 						<a href="http://dream-destination.appspot.com/">
-							<img style="width:300px; height:200px; border-radius: 1%;" src="clouds.jpeg">
+							<img style="width:300px; height:200px; border-radius: 1%;" src="images/clouds.jpeg">
 						</a>
 					</div>
 					<div class="col">
@@ -131,7 +141,7 @@
 				<div class="row projectCards">
 					<div class="col-4" style="padding:0px;">
 						<a href="https://kiarawinslow.github.io/Final-Project/BayAdventures.html">
-							<img style="width:300px; height:200px;  border-radius: 1%" src="bayAdventures.png">
+							<img style="width:300px; height:200px;  border-radius: 1%" src="images/bayAdventures.png">
 						</a>
 					</div>
 					<div class="col">
@@ -179,11 +189,14 @@
 			</div>
 		</div>
 	</section>
-	<div class="footer">
-		<a href="https://www.instagram.com/_phhoebe/">
-		</a>
-		<p style="margin-bottom: 5px;">2020 by Phoebe Achonwa</p>
+	<!-- <section> -->
+	<div class="footer" style="font-size: 17px;">
+		<p><a class="hoverLine" href="mailto:pachonwa6@gmail.com"> Email me!</a> /</p>
+		<p><a class="hoverLine" href="https://github.com/pachonwa/">Github</a> /</p>
+		<a class="hoverLine" href="https://www.linkedin.com/in/phoebeachonwa9ba35b141/">LinkedIn</a>
+		<p style="margin-bottom: 5px; display: inline-block">/ &copy 2022</p>
 	</div>
+	<!-- </section> -->
 
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
