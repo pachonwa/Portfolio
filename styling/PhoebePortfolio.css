@@ -14,6 +14,16 @@ html {
 }  
 
 /* NAVBAR */
+.right-nav{
+  width:100vw;    
+  height:45px;
+  position:fixed;
+  display: flex;
+  -webkit-transform-origin: top right;
+  -webkit-transform:rotate(90deg) translateX(90%);
+  background-color: blue;
+}
+
 .main-nav{
   width:100vh;    
   height:45px;
@@ -21,6 +31,7 @@ html {
   display: flex;
   -webkit-transform-origin: left top;
   -webkit-transform:rotate(-90deg) translateX(-100%);
+  /* background-color: red; */
 }
 
 ul.nav li{
@@ -41,6 +52,11 @@ ul.nav a{
 ul.nav a:hover{
   text-decoration: line-through;
   text-decoration-thickness: 0.7px;
+}
+
+.correctFormat{
+  -webkit-transform-origin: top right;
+  -webkit-transform:rotate(-180deg) translateX(-100%) translateY();
 }
 /* ENDING NAVBAR */
 

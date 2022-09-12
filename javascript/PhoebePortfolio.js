@@ -1,4 +1,9 @@
 
+fetch('https://api.openweathermap.org/data/2.5/weather?q=hayward&' +
+'appid=c28cfdf96992c7e74aca6572284d4450').then(response => response.json())
+    .then(data => console.log(data))
+.catch(err => alert("Wrong city name!"))
+
 document.addEventListener("DOMContentLoaded", function() {
     txt = '';
     wordIndex = 0;
