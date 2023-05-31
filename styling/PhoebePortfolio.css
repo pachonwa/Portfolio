@@ -2,33 +2,29 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  background-color:#EDEDE9; 
+  background-color: #EDEDE9;
   color: #405837;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   line-height: 1.3;
 }
 
-/* * {
-  border: 2px solid red;
-} */
-
 html {
   scroll-behavior: smooth;
-}  
+}
 
 /* NAVBAR */
-.main-nav{
-  width:100vh;    
-  height:45px;
-  position:fixed;
+.main-nav {
+  width: 100vh;
+  height: 45px;
+  position: fixed;
   padding-top: 10px;
   transform-origin: left top;
   display: flex;
-  transform:rotate(-90deg) translateX(-100%);
+  transform: rotate(-90deg) translateX(-100%);
 }
 
-.links{
+.links {
   display: flex;
   justify-content: space-between;
   width: 10%;
@@ -38,32 +34,33 @@ html {
   left: 30vw;
 }
 
-.links a{
+.links a {
   color: inherit;
 }
 
-ul.nav li{
-  margin-right:20px;
+ul.nav li {
+  margin-right: 20px;
   margin-left: 20px;
   font-size: 15px;
   color: inherit;
-  line-height:45px;
+  line-height: 45px;
 }
 
-.right-nav ul li{
+.right-nav ul li {
   font-size: 25px;
-  transform:rotate(90deg);
+  transform: rotate(90deg);
 }
 
-ul.nav a{
+ul.nav a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
-ul.nav a:hover{
+ul.nav a:hover {
   text-decoration: line-through;
   text-decoration-thickness: 0.7px;
 }
+
 /* ENDING NAVBAR */
 
 /* PROJECT SECTION */
@@ -72,43 +69,40 @@ ul.nav a:hover{
   width: 100vw;
 }
 
+#projects h2{
+  margin: 15px;
+  font-weight: bold;
+}
+
 #projects .container {
   display: flex;
   flex-wrap: wrap;
 }
 
-#projects img:hover{
-  opacity:0.8;
+#projects img:hover {
+  opacity: 0.8;
   text-align: center;
 }
 
 .projectCards {
-  margin: 0% 3% 1% 0%;
+  margin: 0% 2% 2% 0%;
   width: 30%;
-  /* height: 80%; */
 }
 
-.projectCards img, iframe{
+.projectCards img,
+iframe {
   height: 100%;
   width: 100%;
-  border-radius: 1%; 
+  border-radius: 1%;
 }
 
-/* .projectCards div{
-  padding: 0px 10px;
-  overflow: scroll;
-  width: 600px;
-  min-width: 300px;
-  height: 200px;
-} */
-
-.projectCards h4 a{
+.projectCards h4 a {
   text-decoration: none;
   color: #405837;
 }
 
 /* HOME SECTION */
-#home{
+#home {
   height: 100vh;
   width: 100vw;
   /* display: flexbox; */
@@ -127,7 +121,7 @@ ul.nav a:hover{
   font-size: 2vw;
 }
 
-.bottom p:nth-child(2){
+.bottom p:nth-child(2) {
   font-size: 5vw;
 }
 
@@ -147,13 +141,14 @@ ul.nav a:hover{
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-a#scroll-btn{
-  position:absolute;
+a#scroll-btn {
+  position: absolute;
   /* opacity: 0; */
   height: 2em;
   width: 1.2em;
@@ -161,15 +156,14 @@ a#scroll-btn{
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 10%; 
+  bottom: 10%;
   border-radius: 2em;
   border-width: 0.1em;
-  -webkit-transition: opacity 2s 5s; /* Safari and Chrome */
+  -webkit-transition: opacity 2s 5s;
   transition: opacity 2s 5s;
-  /* animation: fadein 9s; */
 }
 
-a#scroll-btn::before{
+a#scroll-btn::before {
   position: absolute;
   content: "";
   margin: auto;
@@ -184,26 +178,28 @@ a#scroll-btn::before{
   animation: move-down 2s infinite;
 }
 
-@keyframes fadein{
-  0%{
+@keyframes fadein {
+  0% {
     opacity: 0;
   }
-  100%{
+
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes move-down{
-  80%{
+@keyframes move-down {
+  80% {
     opacity: 0.5;
   }
-  100%{
+
+  100% {
     transform: translateY(0.7em);
     opacity: 0;
   }
 }
 
-a#scroll-btn:after{
+a#scroll-btn:after {
   position: absolute;
   content: "SCROLL DOWN";
   width: 12em;
@@ -226,20 +222,20 @@ a#scroll-btn:after{
   height: 500px;
   border-radius: 17px;
   margin: 30px;
-} 
+}
 
-.aboutTopDiv{
+.aboutTopDiv {
   margin: 30px;
 }
 
-.aboutTopDiv p{
+.aboutTopDiv p {
   font-size: 15px;
   font-weight: 400;
 }
 
 /* ABOUT PAGE TABS */
 
-.tabs{
+.tabs {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -247,12 +243,12 @@ a#scroll-btn:after{
   width: 50%;
 }
 
-.tabName{
+.tabName {
   cursor: pointer;
   position: relative;
 }
 
-.tabName::after{
+.tabName::after {
   content: '';
   width: 0px;
   height: 3px;
@@ -263,38 +259,39 @@ a#scroll-btn:after{
   transition: 0.5s;
 }
 
-.tabName.active-link::after{
+.tabName.active-link::after {
   width: 50%;
 }
 
-.tab-content{
+.tab-content {
   margin-top: 10px;
 }
 
-.tab-content ul{
+.tab-content ul {
   list-style-type: none;
   padding: 0px;
   font-size: 15px;
 }
 
-.tab-content .subDiv{
+.tab-content .subDiv {
   color: #cf684f;
   font-size: 12px;
 }
 
-#skills, #education {
+#skills,
+#education {
   display: none;
 }
 
-#skills ul{
-  font-size: 4vw; 
+#skills ul {
+  font-size: 4vw;
   display: flex;
   justify-content: space-around;
   width: 70%;
   flex-wrap: wrap;
 }
 
-#skills ul li{
+#skills ul li {
   margin-right: 0px 30px 15px 0x;
 }
 
@@ -302,13 +299,11 @@ a#scroll-btn:after{
 
 .hidden {
   opacity: 0;
-  /* transform: translateY(40px); */
   transition: 0.5s;
 }
 
 .show {
   opacity: 1;
-  /* transform: translateY(0); */
 }
 
 /* FOOTER */
@@ -317,57 +312,61 @@ a#scroll-btn:after{
   text-align: center;
 }
 
-div.footer a{
-  text-decoration:none; 
+div.footer a {
+  text-decoration: none;
   color: inherit;
   display: inline-block;
 }
 
-div.footer p{
+div.footer p {
   display: inline-block;
 }
 
-a.hoverLine:hover{
+a.hoverLine:hover {
   text-decoration: line-through;
   text-decoration-thickness: 0.7px;
 }
 
-@media screen and (max-width: 1040px){
-  #about{
+@media screen and (max-width: 1040px) {
+  #about {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .bottom, .links{
+
+  .bottom,
+  .links {
     left: 90px;
   }
 
-  #home p:nth-child(1){
+  #home p:nth-child(1) {
     font-size: 100%;
-  } 
-  #home p:nth-child(2){
+  }
+
+  #home p:nth-child(2) {
     font-size: 300%;
-  } 
-  
-  #about div:nth-child(1), #projects .container{
+  }
+
+  #about div:nth-child(1),
+  #projects .container {
     display: flex;
     justify-content: center;
   }
 
-  #about img{
+  #about img {
     height: 80%;
     width: 70%;
   }
 
-  .projectCards{
+  .projectCards {
     width: 80%;
     height: 200px;
     margin-bottom: 10px;
   }
 
-  .footer p{
+  .footer p {
     font-size: 12px;
   }
 }
