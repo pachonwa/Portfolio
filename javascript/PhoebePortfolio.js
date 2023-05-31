@@ -1,31 +1,40 @@
-
-fetch('https://api.openweathermap.org/data/2.5/weather?q=hayward&' +
-'appid=c28cfdf96992c7e74aca6572284d4450').then(response => response.json())
-    .then(data => console.log(data))
-.catch(err => alert("Wrong city name!"))
-
-document.addEventListener("DOMContentLoaded", function() {
-    txt = '';
-    wordIndex = 0;
-    txtElement = document.querySelector('.typing').innerHTML;
-});
-
-
-function isInViewPort(elem){
-    var bounding = elem.getBoundingClientRect();
-    return (
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.right <= window.innerWidth &&
-        bounding.bottom <= window.innerHeight
-    )
-};
-
 document.addEventListener('DOMContentLoaded', type);
-
+let nameToType = 'Phoebe Achonwa :)';
+let ind = 0;
 function type() {
-    txt = txtElement.slice(0, ++wordIndex);
-    
-    document.querySelector('.typing').textContent = txt;
-    setTimeout(type, 200);
+    if(ind < nameToType.length){
+        document.querySelector('.typing').innerHTML += nameToType.charAt(ind);
+        ind++;
+        setTimeout(type, 250);
+    }
 };
+
+// Fade in / Blur animation on scroll
+let observerFade = new IntersectionObserver((entries)=> {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        } else{
+            entry.target.classList.remove("show");
+        }
+    });
+}, {rootMargin: '0px', threshold:0.3});
+let hiddenDivs = document.querySelectorAll(".hidden");
+hiddenDivs.forEach((el) => observerFade.observe(el));
+
+// About page tabbing
+let tabs = document.getElementsByClassName("tabName");
+let tabContents = document.getElementsByClassName("tab-content");
+for(let i = 0; i < tabs.length; i++){
+    tabs[i].addEventListener("click", ()=>{
+        tabs[i].classList.add("active-link");
+        tabContents[i].style.display = 'block';
+
+        for(let j = 0; j < tabs.length; j++){
+            if(tabs[j] != tabs[i]) {
+                tabs[j].classList.remove("active-link"); 
+                tabContents[j].style.display = 'none';
+            }
+        }
+    })
+}

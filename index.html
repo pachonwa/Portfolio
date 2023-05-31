@@ -7,161 +7,205 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/c1350ce526.js" crossorigin="anonymous"></script>
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-	<link href="styling/PhoebePortfolio.css" rel="stylesheet" type="text/css">
-	<script src="javascript/PhoebePortfolio.js"></script>
-	<link href="//fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<!-- Fonts -->
+	<!-- Lato -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+
+	<!-- Poppins -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+
+	<link href="styling/PhoebePortfolio.css" rel="stylesheet" type="text/css">
+
 
 </head>
 
 <body>
-	<section class="container-fluid" id="home">
-		<div class="main-nav">
-			<ul class="nav flex-row">
-				<li ><a href="./PhoebeResume.pdf" target="Resume.html">RESUME</a></li>
-				<li ><a href="#projects">PROJECTS</a></li>
-				<li ><a href="#about">ABOUT</a></li>
-				<li ><a href="#home">HOME</a></li>
-			</ul>
-		</div>
+	<!-- Left side navbar -->
+	<div class="main-nav">
+		<ul class="nav">
+			<li><a href="./PhoebeResume.pdf" target="Resume.html">RESUME</a></li>
+			<li><a href="#projects">PROJECTS</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#home">HOME</a></li>
+		</ul>
+	</div>
 
-		<!-- <div class="right-nav">
-			<ul class="nav flex-row">
-				<li class="correctFormat"><a href="https://openweathermap.org/city/5355933" target="https://openweathermap.org/city/5355933">WEATHER</a><p>53 degrees</p></li>
-			</ul>
-		</div> -->
-
-		<div class="bottom row">
-			<div class="col">
-				<p style="font-size: 30px;">Hello, my name is</p>
-				<p class="typing" style="font-size: 70px;">Phoebe Achonwa :)</p>
-			</div>
+	<section id="home">
+		<div class="bottom">
+			<p>Hello, my name is</p>
+			<p class="typing"></p>
 		</div>
-		<a id="scroll-btn"></a>
+		<div class="links">
+			<a href="https://www.linkedin.com/in/phoebeachonwa9ba35b141/"><i class="fa-brands fa-linkedin-in"></i></a>
+			<a href="https://github.com/pachonwa/"><i class="fa-brands fa-github"></i></a>
+			<a href="mailto:pachonwa6@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+		</div>
+		<!-- <a class="show" id="scroll-btn"></a> -->
 	</section>
 
-	<section id="about">
-		<div class="row fadeInUp" style="padding-right: 150px; padding-left: 150px; display:flexbox">
-			<div class="col">
-				<img style="height:450px; width:350px;"src="images/IMG_2714.jpg">
-				<!-- <p>Picture goes here</p> -->
+	<section class="hidden" id="about">
+		<div>
+			<img src="images/IMG_2714.jpg">
+		</div>
+		<div class="aboutTopDiv">
+			<h3 style="margin: 10px 0px; font-weight: bold">About Me</h3>
+			<p>
+				Hi! I am a recent graduate of University of California, Santa Cruz with a B.S. in
+				computer engineering.
+				I'm interested in web development, software engineering,
+				and product management.
+				I began my coding journey when I joined Girls Who Code during my
+				high school years and later participated in the Google Computer Science Summer Institute. During my time
+				at Santa Cruz
+				, I joined
+				a few clubs such as the National Society of Black Engineers(NSBE) and CruzHacks, a non-profit
+				hackathon held each year, where I
+				assissted the sponsorship team. I also joined the NueroTech team. Last year, we created
+				a headset that predicts the words
+				our user is saying just from the movement of their mouth.
+			</p>
+
+			<br>
+
+			<!-- tabs -->
+			<div class="tabs">
+				<p class="tabName active-link">Experience</p>
+				<p class="tabName">Skills</p>
+				<p class="tabName">Education</p>
 			</div>
-			<div class="col">
-				<div class="aboutTopDiv" style="flexbox">
-					<h4 style="margin-bottom: 10px; margin-top: 10px; font-weight: bold">About Me</h4>
-					<p style="font-size: 19px">Hi! I am a recent graduate of University of California, Santa Cruz with a B.S. in computer engineering. 
-						I'm interested in web development, software engineering,
-						and product management.
-						I began my coding journey when I joined Girls Who Code during my
-						high school years and later participated in the Google Computer Science Summer Institute. During my time at Santa Cruz
-						, I joined
-						a few clubs such as the National Society of Black Engineers(NSBE) and CruzHacks, a non-profit
-						hackathon held each year, where I
-						assissted the sponsorship team. I also joined the NueroTech team. Last year, we created
-						a headset that predicts the words
-						our user is saying just from the movement of their mouth.
-					</p>
+
+			<!-- tab content -->
+			<div class="tab-content" id="experience">
+				<ul>
+					<li>
+						<span style="font-weight: 500">Industrial Light & Magic</span>
+						<br>Technical Assistant I<br>
+						<span class="subDiv">August 2022 - Present</span>
+					</li>
 					<br>
-					<h3>Skills</h3>
-					<p style="font-size: 19px">C programming, Java, HTML & CSS, Python & Javascript(little experience)</p>
-				</div>
+					<li>
+						<span style="font-weight: 500">Amazon</span>
+						<br>Software Engineering Intern<br>
+						<span class="subDiv">June 2021 - September 2021</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="tab-content" id="skills">
+				<ul>
+					<li><i class="fa-solid fa-c"></i></li>
+					<li><i class="fa-brands fa-java"></i></li>
+					<li><i class="fa-brands fa-html5"></i></li>
+					<li><i class="fa-brands fa-css3-alt"></i></li>
+					<li><i class="fa-brands fa-square-js"></i></li>
+					<li><i class="fa-brands fa-node"></i></li>
+				</ul>
+			</div>
+
+			<div class="tab-content" id="education">
+				<ul>
+					<li><span style="font-weight: 500">University of California, Santa Cruz</span>
+						<br>B.S. Computer Engineering<br>
+						<span class="subDiv">2018-2022</span>
+					</li>
+					<br>
+					<li>
+						<span style="font-weight: 500">Mt. Eden High School</span>
+						<br>
+						<span class="subDiv">2014-2018</span>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</section>
 
-
-	<section id="projects">
-		<div style="padding-left: 150px; padding-right: 150px;">
-			<h2 style="margin-bottom: 40px">Projects</h2>
-			<div class="container">
-				<div class="row projectCards" style="margin-bottom: 8px;" data-aos="fade-left">
-					<div class="col-4" style="padding:0px;">
-						<a href="http://dream-destination.appspot.com/">
-							<img style="width:300px; height:200px; border-radius: 1%;" src="images/clouds.jpeg">
-						</a>
-					</div>
-					<div class="col">
-						<h4 style="margin-top: 10px;">Dream Destination</h4>
-						<h6 style="color: #264027">Summer 2018</h6>
-						<p>Participated in a three week computer science program where I obtained skills in Python,
-							Javascript, HTML, CSS and Appengine
-							and handled the front-end using HTML and CSS in a collaborative group web application
-							project
-						</p>
-					</div>
-				</div>
-				<div class="row projectCards" style="margin-bottom: 8px;">
-					<div class="col-4" style="padding:0px;">
-						<a href="https://kiarawinslow.github.io/Final-Project/BayAdventures.html">
-							<img style="width:300px; height:200px;  border-radius: 1%" src="images/bayAdventures.png">
-						</a>
-					</div>
-					<div class="col">
-						<h4 style="margin-top: 10px;">Bay Adventures</h4>
-						<h6 style="color: #264027">Summer 2016</h6>
-						<p>Developed basic skills in robotics, web development and programming languages such as Python
-							and Javascript
-							and worked on the front-end portion of a group web application
-						</p>
-					</div>
-				</div>
-				<div class="row projectCards"> 
-					<div class="col-4" style="padding:0px;">
-						<!-- <a href="https://kiarawinslow.github.io/Final-Project/BayAdventures.html">
-							<img style="width:300px; height:200px;  border-radius: 1%" src="">
-						</a> -->
-						<iframe width="300" height="200" src="https://www.youtube.com/embed/bh11Pg4uLxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<!-- </iframe> -->
-					</div>
-					<div class="col">
-						<h4 style="margin-top: 10px;">NueroTech Headset</h4>
-						<h6 style="color: #264027">Fall 2020</h6>
-						<p>I used Fusion 360 to cad a headset design which included housing for electrodes, battery 
-							pack and board. I also assembled the skeleton of the eletrode placements.
-						</p>
-					</div>
-				</div>
-				<div class="row projectCards"> 
-						<div class="col-4" style="padding:0px;">
-							<a href="https://docs.google.com/document/d/1gYvpzpzv_uXPw9OlWe2qaz_WC8CD-hETZWekhxG7A6w/edit?usp=sharing">
-								<img style="width:300px; height:200px;  border-radius: 1%" src="images/mechRobot.jpg" alt = "A picture of my robot aka Harry">
-							</a>
-						</div>
-						<div class="col">
-							<h4 style="margin-top: 10px;">Mechatronics Class Robot</h4>
-							<h6 style="color: #264027">Fall 2021</h6>
-							<p>
-								<ul>
-									<li>Created a robot from scratch that locates towers spread out around a field and deposits a ball into the correct hole indicated by black tape</li>
-									<li>I handled the software portion which included creating a state machine and debugging </li>
-								</ul>
-							</p>
-						</div>
-					</div>
+	<section class="hidden" id="projects">
+		<h2 style="margin-bottom: 40px">Projects</h2>
+		<div class="container">
+			<div class="projectCards">
+				<a
+					href="https://docs.google.com/document/d/1gYvpzpzv_uXPw9OlWe2qaz_WC8CD-hETZWekhxG7A6w/edit?usp=sharing">
+					<img src="images/mechRobot.jpg" alt="A picture of my robot aka Harry">
+				</a>
+				<!-- <div>
+					<h4 style="margin-top: 10px;"><a
+							href="https://docs.google.com/document/d/1gYvpzpzv_uXPw9OlWe2qaz_WC8CD-hETZWekhxG7A6w/edit?usp=sharing">Mechatronics
+							Class Robot</a></h4>
+					<h6 style="color: #264027">Fall 2021</h6>
+					<p>
+					<p>Created a robot from scratch that locates towers spread out around a field and deposits a
+						ball into the correct hole indicated by black tape.
+						I handled the software portion which included creating a state machine and debugging </p>
+					</p>
+				</div> -->
+			</div>
+			<div class="projectCards">
+				<iframe width="300" height="200" src="https://www.youtube.com/embed/bh11Pg4uLxQ"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<!-- <div>
+					<h4 style="margin-top: 10px;"><a href="https://www.youtube.com/embed/bh11Pg4uLxQ">NueroTech
+							Headset</a></h4>
+					<h6 style="color: #264027">Fall 2020</h6>
+					<p>I used Fusion 360 to cad a headset design which included housing for electrodes, battery
+						pack and board. I also assembled the skeleton of the eletrode placements.
+					</p>
+				</div> -->
+			</div>
+			<div class="projectCards">
+				<a href="https://kiarawinslow.github.io/Final-Project/BayAdventures.html">
+					<img src="images/bayAdventures.png">
+				</a>
+				<!-- <div>
+					<h4 style="margin-top: 10px;"><a
+							href="https://kiarawinslow.github.io/Final-Project/BayAdventures.html">Bay Adeventures</a>
+					</h4>
+					<h6 style="color: #264027">Summer 2016</h6>
+					<p>Developed basic skills in robotics, web development and programming languages such as Python
+						and Javascript
+						and worked on the front-end portion of a group web application
+					</p>
+				</div> -->
+			</div>
+			<div class="projectCards">
+				<a href="https://github.com/pachonwa/dreamdestination">
+					<img src="images/clouds.jpeg">
+				</a>
+				<!-- <div>
+					<h4 style="margin-top: 10px;"><a href="http://dream-destination.appspot.com/">Dream Destination</a>
+					</h4>
+					<h6 style="color: #264027">Summer 2018</h6>
+					<p>Participated in a three week computer science program where I obtained skills in Python,
+						Javascript, HTML, CSS and Appengine
+						and handled the front-end using HTML and CSS in a collaborative group web application
+						project
+					</p>
+				</div> -->
 			</div>
 		</div>
 	</section>
-	<!-- <section> -->
+
 	<div class="footer" style="font-size: 17px;">
 		<p><a class="hoverLine" href="mailto:pachonwa6@gmail.com"> Email me!</a> /</p>
 		<p><a class="hoverLine" href="https://github.com/pachonwa/">Github</a> /</p>
-		<a class="hoverLine" href="https://www.linkedin.com/in/phoebeachonwa9ba35b141/">LinkedIn</a>
+		<p><a class="hoverLine" href="https://www.linkedin.com/in/phoebeachonwa9ba35b141/">LinkedIn</a></p>
 		<p style="margin-bottom: 5px; display: inline-block">/ &copy 2022</p>
 	</div>
-	<!-- </section> -->
 
 
+	<script src="javascript/PhoebePortfolio.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
