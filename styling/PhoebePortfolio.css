@@ -89,6 +89,10 @@ ul.nav a:hover {
   width: 30%;
 }
 
+.projectCards :hover{
+  cursor: pointer
+}
+
 .projectCards img,
 iframe {
   height: 100%;
@@ -283,13 +287,13 @@ a#scroll-btn:after {
   display: none;
 }
 
-#skills ul {
+/* #skills ul {
   font-size: 4vw;
   display: flex;
   justify-content: space-around;
   width: 70%;
   flex-wrap: wrap;
-}
+} */
 
 #skills ul li {
   margin-right: 0px 30px 15px 0x;
