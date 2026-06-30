@@ -13,6 +13,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.project-listing{
+  color:#405837;
+  text-decoration: underline;
+  font-size: 18pt;
+  padding-left: 150px;
+}
+
 /* NAVBAR */
 .main-nav {
   width: 100vh;
@@ -65,7 +72,7 @@ ul.nav a:hover {
 
 /* PROJECT SECTION */
 #projects {
-  padding: 8%;
+  padding: 4%;
   width: 100vw;
 }
 
